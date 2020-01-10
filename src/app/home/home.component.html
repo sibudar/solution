@@ -1,0 +1,6 @@
+<div class="row">
+    <div class="col" *ngFor="let country of countries">
+        <h4> {{country.name}}</h4> 
+        <img src="{{country.flag}}" width="250px" height="200px" routerLink="/home/{{country.alpha3Code}}">
+     </div>
+</div>
