@@ -10,7 +10,7 @@ import { CountryService } from '../services/country.service';
 })
 export class CountryComponent implements OnInit {
   id: any;
-
+  name: string ; 
   constructor(private route: ActivatedRoute , private countryService: CountryService) {
 
     this.route.params.subscribe(params => {
